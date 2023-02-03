@@ -13,6 +13,8 @@ function myFunction() {
     } else {
         navbar.classList.remove("sticky");
     }
+
+    icon.classList.contains("fa-bars")
 }
 
 let btn = document.querySelector(".toggle");
