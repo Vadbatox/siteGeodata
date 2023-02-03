@@ -13,7 +13,8 @@ function myFunction() {
     } else {
         navbar.classList.remove("sticky");
     }
-
+    icon.classList.replace("fa-times", "fa-bars");
+    menu.style.display = "none"
 }
 
 let btn = document.querySelector(".toggle");
