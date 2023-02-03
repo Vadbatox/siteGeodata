@@ -14,24 +14,20 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 
-    icon.classList.contains("fa-bars")
 }
 
 let btn = document.querySelector(".toggle");
 let icon = btn.querySelector(".fa-bars");
+let menu = document.querySelector(".toggle-menu")
 
-btn.onmouseenter = function() {
+btn.onclick = function() {
     if (icon.classList.contains("fa-bars")) {
         icon.classList.replace("fa-bars", "fa-times");
+        menu.style.display = "block"
     } else {
         icon.classList.replace("fa-times", "fa-bars");
+        menu.style.display = "none"
     }
-}
 
-btn.onmouseleave = function() {
-    if (icon.classList.contains("fa-times")) {
-        icon.classList.replace("fa-times", "fa-bars");
-    } else {
-        icon.classList.replace("fa-bars", "fa-times");
-    }
+
 }
