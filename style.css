@@ -425,4 +425,7 @@ div {
     .contact2 p {
         line-height: 20px;
     }
+    .contact .contact2 {
+        display: flexbox;
+    }
 }
